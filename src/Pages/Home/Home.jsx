@@ -27,12 +27,12 @@ function Home() {
               <p className='absolute text-white font-semibold text-5xl bottom-20 ml-4'>Fornitures</p>
             </Link>
 
-            <Link to="#" className='flex' >
+            <Link to="/categories/kitchen" className='flex' >
               <img className='rounded-sm brightness-75 hover:brightness-50 cursor-pointer transition duration-500' src={kitchen} alt="" />
               <p className='absolute text-white font-semibold text-5xl bottom-20 ml-4'>Kitchen</p>
             </Link>
 
-            <Link to="#" className='flex'>
+            <Link to="/categories/eletronics" className='flex'>
               <img className='rounded-sm brightness-75 hover:brightness-50 cursor-pointer transition duration-500' src={eletronics} alt="" />
               <p className='absolute text-white font-semibold text-5xl bottom-20 ml-4'>Eletronics</p>
             </Link>

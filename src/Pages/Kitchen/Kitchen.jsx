@@ -3,17 +3,14 @@ import { useProduct } from '../../ProductContext';
 import CategoriesHeader from '../../components/CategoriesHeader/CategoriesHeader';
 
 
-
-function Fornitures() {
-
+function Kitchen() {
   const { products } = useProduct();
 
-  const limitedProducts = products.slice(0, 3);
-
+  const limitedProducts = products.slice(6, 8);
   return (
     <div className='container mx-auto max-w-screen-xl p-12 min-h-screen'>
       <div className='flex justify-center'>
-        <span className='text-3xl font-semibold'>Fornitures</span>
+        <span className='text-3xl font-semibold'>Kitchen</span>
       </div>
       <CategoriesHeader />
       <div className='flex gap-4 container mx-auto max-w-screen-xl mb-16 p-12'>
@@ -32,4 +29,4 @@ function Fornitures() {
   );
 }
 
-export default Fornitures;
+export default Kitchen;
