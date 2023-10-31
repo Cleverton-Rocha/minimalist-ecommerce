@@ -48,6 +48,7 @@ function Home() {
           {limitedProducts.map((product, index) => (
             <ProductCard
               key={index}
+              id={product.id}
               name={product.name}
               image={product.image}
               size='500'

@@ -6,7 +6,7 @@ import CategoriesHeader from '../../components/CategoriesHeader/CategoriesHeader
 function Kitchen() {
   const { products } = useProduct();
 
-  const limitedProducts = products.slice(6, 8);
+  const limitedProducts = products.slice(8, 10);
   return (
     <div className='container mx-auto max-w-screen-xl p-12 min-h-screen'>
       <div className='flex justify-center'>
@@ -17,6 +17,7 @@ function Kitchen() {
         {limitedProducts.map((product, index) => (
           <ProductCard
             key={index}
+            id={product.id}
             name={product.name}
             image={product.image}
             size='300'

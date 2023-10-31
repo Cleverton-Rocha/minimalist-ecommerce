@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function Banner(props) {
   return (
@@ -11,7 +12,7 @@ function Banner(props) {
           <div className='flex flex-col text-start max-w-sm'>
             <h1 className='text-3xl py-4 font-semibold'>Clean and comfortable design</h1>
             <p className='text-lg line w-11/12 mb-4'>Our products are made with your comfort in mind.</p>
-            <a className='flex justify-center w-20 p-1 rounded-sm hover:bg-transparent hover:text-black border-2 border-black bg-black text-white text-lg font-semibold transition duration-300' href="">SHOP</a>
+            <Link to="/categories/all" className='flex justify-center w-20 p-1 rounded-sm hover:bg-transparent hover:text-black border-2 border-black bg-black text-white text-lg font-semibold transition duration-300'>SHOP</Link>
           </div>
 
         </div>
