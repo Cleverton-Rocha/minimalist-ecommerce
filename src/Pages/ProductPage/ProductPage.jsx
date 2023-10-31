@@ -42,21 +42,21 @@ function ProductPage() {
   } else {
     return (
       <>
-        <div className='grid grid-cols-2 grid-flow-row rounded-sm p-12 container mx-auto max-w-screen-xl mt-10 mb-20'>
+        <div className='grid grid-cols-1 md:grid-cols-2 grid-flow-row rounded-sm p-4 md:p-12 container mx-auto max-w-screen-xl mt-10 mb-20'>
           <div className='flex justify-center h-4/4'>
             <img className='object-contain' width={500} src={product.image} alt="" />
           </div>
 
           <div className='bg-gray-200 h-4/4'>
             <div className='flex justify-center h-full'>
-              <div className='flex flex-col justify-center items-center text-start max-w-sm'>
-                <h1 className='text-3xl mb-12 text-center py-4 font-semibold'>{product.name}</h1>
-                <p className='text-lg mb-16'>{product.description}</p>
-                <div className='flex gap-36'>
-                  <span className='text-4xl font-semibold'>
+              <div className='flex flex-col justify-center items-center text-start w-80 md:max-w-sm'>
+                <h1 className='text-xl md:text-2xl md:mb-12 text-center py-4 font-semibold'>{product.name}</h1>
+                <p className='text-md text-center md:text-left mb-16'>{product.description}</p>
+                <div className='flex gap-20 md:gap-32'>
+                  <span className='text-2xl md:text-4xl font-semibold'>
                     {`${product.price}.00$`}
                   </span>
-                  <a className='flex justify-center w-32 p-1 rounded-sm hover:bg-transparent hover:text-black border-2 border-red-600 bg-red-600 text-white text-lg font-semibold transition duration-300' href="">BUY NOW</a>
+                  <a className='flex justify-center w-24 md:w-32 mb-2 p-1 rounded-sm hover:bg-transparent hover:text-black border-2 border-red-600 bg-red-600 text-white text-sm md:text-lg font-semibold transition duration-300' href="">BUY NOW</a>
                 </div>
               </div>
             </div>

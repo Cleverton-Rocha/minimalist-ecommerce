@@ -8,7 +8,7 @@ function Categories() {
   return (
     <div className="container mx-auto max-w-screen-xl p-12 min-h-screen">
       <div className='flex justify-center'>
-        <span className='text-3xl font-semibold'>All</span>
+        <span className='text-xl md:text-2xl font-semibold'>All</span>
       </div>
       <CategoriesHeader />
       <div>
