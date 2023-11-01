@@ -13,7 +13,7 @@ function Header() {
       <div className='flex items-center text-md lg:text-xl'>
         <ul className='flex gap-8'>
           <li><Link to="/categories/all" className='border-b-2 pb-1 hover:border-b-2 hover:border-b-lightOrange transition duration-300 ease-in-out'>CATEGORIES</Link></li>
-          <li><a className='border-b-2 pb-1 hover:border-b-2 hover:border-b-lightOrange transition duration-300 ease-in-out' href="">PRODUCT PAGE</a></li>
+          <li><Link to="/product/1" className='border-b-2 pb-1 hover:border-b-2 hover:border-b-lightOrange transition duration-300 ease-in-out' >PRODUCT PAGE</Link></li>
           <li className='mt-1 cursor-pointer hidden lg:block'><FaShoppingCart size={25} /></li>
         </ul>
       </div>
