@@ -13,7 +13,7 @@ function Eletronics() {
         <span className='text-xl md:text-2xl font-semibold'>Eletronics</span>
       </div>
       <CategoriesHeader />
-      <div className='flex flex-col md:flex-row gap-4 container mx-auto max-w-screen-xl mb-16 p-12'>
+      <div className='flex flex-wrap md:flex-row gap-4 container mx-auto max-w-screen-xl mb-16 p-12'>
         {limitedProducts.map((product, index) => (
           <ProductCard
             key={index}

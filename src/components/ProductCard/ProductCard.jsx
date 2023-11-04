@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function ProductCard(props) {
   return (
 
-    <Link to={`/product/${props.id}`} className='flex flex-col justify-between border-2 border-gray-300 rounded-sm hover:border-gray-600 transition duration-300 w-48 md:w-64'>
+    <Link to={`/product/${props.id}`} className='flex flex-col justify-between border-2 border-gray-300 rounded-sm hover:border-gray-600 transition duration-300 w-72 md:w-64'>
       <div className='p-12'>
         <img className='scale-125' width={props.size} src={props.image} alt="Product" />
       </div>
